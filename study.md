@@ -74,7 +74,7 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-First, Rails connects with the router and tries to match the GET request to
+First, Rails routing module connects with the router and tries to match the GET request to
 a specific action in the controller class. If it is successful, it will show the action
-with specifics on what was communicated (for instance, an ID). 
+with specifics on what was communicated (for instance, an ID).
 ```
