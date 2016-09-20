@@ -31,7 +31,13 @@ In your own words, define what the responsibilities of the model layer are in
 Rails.
 
 ```md
-<!-- your answer here -->
+The model layer is the section of code (Ruby classes) that is doing the most work.
+This is where a developer generally writes code to handle database interactions and
+the logic required to do those interactions.
+
+sources:
+https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/
+https://www.sitepoint.com/building-your-first-rails-application-models/
 ```
 
 ## Define Controller Responsiblities
@@ -40,7 +46,13 @@ In your own words, define what the responsibilities of the controller layer are
 in Rails.
 
 ```md
-<!-- your answer here -->
+The controller layer is a class in Ruby that allows a developer or user to interpret
+and use what has been stored and/or retrieved from the database. It is the part
+of code that managers helper modules, which provide more useful tools in the program
+without making the code bulky.
+
+sources: https://www.tutorialspoint.com/ruby-on-rails/rails-controllers.htm
+http://guides.rubyonrails.org/action_controller_overview.html
 ```
 
 ## Define Router Responsiblities
@@ -48,7 +60,12 @@ in Rails.
 In your own words, define what the router does in Rails.
 
 ```md
-<!-- your answer here -->
+The Rails router is responsible for recognizing given URLs and firing them based
+on the actions outlined in the controller. It can also help a developer cut down
+on code by helping to generate URL paths, assuming certain naming conventions
+within the controller are in place.
+
+source: http://guides.rubyonrails.org/routing.html
 ```
 
 ## The Request-Response Cycle in Rails
@@ -57,5 +74,7 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-<!-- your answer here -->
+First, Rails connects with the router and tries to match the GET request to
+a specific action in the controller class. If it is successful, it will show the action
+with specifics on what was communicated (for instance, an ID). 
 ```
